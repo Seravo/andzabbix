@@ -13,6 +13,25 @@
     
    <!-- View starts here  -->
    <!-- Logo -->
+   <ImageView
+        android:id="@+id/az_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/az_logo" />
+   
+   <!-- Server select spinner -->
+   <Spinner 
+       android:id="@+id/select_server"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/az_logo"
+       android:entries="@array/select_server"
+       android:prompt="@string/server_prompt"
+       android:layout_marginBottom="10dp"
+       style="@style/select_server"
+       />
    
    <!-- Top divider -->
    <!-- @+id is used only when we define for the 1st time -->
@@ -21,6 +40,7 @@
        android:orientation="horizontal"
        android:layout_width="match_parent"
        android:layout_height="5dp"
+       android:layout_below="@id/select_server"
        android:layout_marginBottom="10dp"
        style="@style/az_divider"/>
    
