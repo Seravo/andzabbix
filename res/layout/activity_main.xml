@@ -21,27 +21,37 @@
         android:layout_marginBottom="10dp"
         android:src="@drawable/az_logo" />
    
+   <!-- Top divider -->
+   <!-- @+id is used only when we define for the 1st time -->
+   <LinearLayout
+       android:id="@+id/az_divider_up"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="5dp"
+       android:layout_below="@id/az_logo"
+       android:layout_marginBottom="20dp"
+       style="@style/az_divider"/>
+   
    <!-- Server select spinner -->
    <Spinner 
        android:id="@+id/select_server"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_below="@id/az_logo"
+       android:layout_below="@id/az_divider_up"
        android:entries="@array/select_server"
        android:prompt="@string/server_prompt"
-       android:layout_marginBottom="10dp"
+       android:layout_marginBottom="20dp"
        style="@style/select_server"
        />
    
-   <!-- Top divider -->
-   <!-- @+id is used only when we define for the 1st time -->
+   <!-- Middle divider -->
    <LinearLayout
-       android:id="@+id/az_divider"
+       android:id="@+id/az_divider_middle"
        android:orientation="horizontal"
        android:layout_width="match_parent"
        android:layout_height="5dp"
        android:layout_below="@id/select_server"
-       android:layout_marginBottom="10dp"
+       android:layout_marginBottom="20dp"
        style="@style/az_divider"/>
    
    <!-- Graphs button (top left) -->
@@ -49,10 +59,11 @@
         android:id="@+id/az_button_left_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/az_divider"
+        android:layout_below="@id/az_divider_middle"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="20dp"
         android:text="Graphs"
+        android:onClick="openGraph"
         style="@style/az_button_left_up"/>
    
    <!-- FAQ button (top right) -->
@@ -60,7 +71,7 @@
         android:id="@+id/az_button_right_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/az_divider"
+        android:layout_below="@id/az_divider_middle"
         android:layout_alignParentRight="true"
 		android:layout_marginBottom="20dp"
         android:text="FAQ"
@@ -72,7 +83,7 @@
         android:id="@+id/az_button_center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/az_divider"
+        android:layout_below="@id/az_divider_middle"
         android:layout_marginTop="20px"
         android:layout_toRightOf="@id/az_button_left_up"
         android:layout_toLeftOf="@id/az_button_right_up"
@@ -99,15 +110,26 @@
         android:text="Hosts"
         style="@style/az_button_right_down"/>
     
-    <!-- Divider 2 -->
+    <!-- Bottom Divider -->
     <LinearLayout
-       android:id="@+id/az_divider2"
+       android:id="@+id/az_divider_down"
        android:orientation="horizontal"
        android:layout_width="match_parent"
        android:layout_height="5dp"
        android:layout_below="@id/az_button_left_down"
-       android:layout_marginTop="10dp"
-       android:layout_marginBottom="10dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp"
        style="@style/az_divider"/>
+    
+    <!-- Configure Button (lowermost) -->
+    <Button 
+        android:id="@+id/az_button_config_down"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/az_divider_down"
+        android:text="Configure Settings"
+        style="@style/az_button_config_down"/>
     
 </RelativeLayout>

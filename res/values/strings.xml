@@ -4,7 +4,6 @@
     <string name="app_name">Andzabbix</string>
     <string name="action_settings">Settings</string>
     <string name="server_prompt">Select server</string>
-    
     <string name="select_server">Select a server</string>
     <!-- this is proof of concept, will be populated from user settings later -->
     <string-array name="select_server">
@@ -12,5 +11,8 @@
         <item>Test - test.testserver.org</item>
         <item>Haaga-Helia - haaga.helia.fi</item>
     </string-array>
+
+    <string name="title_activity_graphs">Graphs</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

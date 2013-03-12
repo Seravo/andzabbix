@@ -39,28 +39,34 @@ public final class R {
         public static final int ic_launcher=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f090009;
-        public static final int az_button_center=0x7f090005;
-        public static final int az_button_left_down=0x7f090006;
-        public static final int az_button_left_up=0x7f090003;
-        public static final int az_button_right_down=0x7f090007;
-        public static final int az_button_right_up=0x7f090004;
-        public static final int az_divider=0x7f090002;
-        public static final int az_divider2=0x7f090008;
+        public static final int action_settings=0x7f09000b;
+        public static final int az_button_center=0x7f090006;
+        public static final int az_button_config_down=0x7f09000a;
+        public static final int az_button_left_down=0x7f090007;
+        public static final int az_button_left_up=0x7f090004;
+        public static final int az_button_right_down=0x7f090008;
+        public static final int az_button_right_up=0x7f090005;
+        public static final int az_divider_down=0x7f090009;
+        public static final int az_divider_middle=0x7f090003;
+        public static final int az_divider_up=0x7f090001;
         public static final int az_logo=0x7f090000;
-        public static final int select_server=0x7f090001;
+        public static final int select_server=0x7f090002;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_graphs=0x7f030000;
+        public static final int activity_main=0x7f030001;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int graphs=0x7f080000;
+        public static final int main=0x7f080001;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int hello_world=0x7f050005;
         public static final int select_server=0x7f050003;
         public static final int server_prompt=0x7f050002;
+        public static final int title_activity_graphs=0x7f050004;
     }
     public static final class style {
         /** 
@@ -90,6 +96,7 @@ public final class R {
          */
         public static final int AppTheme=0x7f070001;
         public static final int az_button_center=0x7f070006;
+        public static final int az_button_config_down=0x7f070009;
         public static final int az_button_left_down=0x7f070007;
         public static final int az_button_left_up=0x7f070004;
         public static final int az_button_right_down=0x7f070008;
