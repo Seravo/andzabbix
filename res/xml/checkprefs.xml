@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF" >
+
+    <PreferenceCategory android:title="Asknowledge config" >
+        <CheckBoxPreference
+            android:key="showunaskonly"
+            android:summary="Show only unasknowledged triggers"
+            android:title="Hide asknowledged" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Custom check config" >
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/TriggerCheckTypes"
+            android:entryValues="@array/TriggerCheckTypesValues"
+            android:key="check_type"
+            android:summary="Type of trigger checks"
+            android:title="Triggers check type" />
+
+        <EditTextPreference
+            android:defaultValue="10"
+            android:dialogMessage="Show active triggers for time:"
+            android:dialogTitle="Time actime (m)"
+            android:inputType="number"
+            android:key="activetriggertime"
+            android:summary="Custom time period for check active triggers. Show active triggers fo last: (m)"
+            android:title="Custom time period" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Triggers filter" >
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/TriggerTypes"
+            android:entryValues="@array/TriggerTypesValues"
+            android:key="trigger_filter"
+            android:summary="Triggers filter"
+            android:title="Triggers filter" />
+
+        <CheckBoxPreference
+            android:key="sort_triggers"
+            android:defaultValue="true"
+            android:summary="Sort triggers by status"
+            android:title="Sort triggers" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

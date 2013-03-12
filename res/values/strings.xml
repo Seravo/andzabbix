@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndZabbix</string>
+
+    <string-array name="menu">
+        <item>Zabbix servers</item>
+        <item>Interface</item>
+        <item>Triggers config</item>
+        <item>Service config</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="configure_intro">Images Widget Configuration</string>
+    <string name="configure_update">Update Time</string>
+    <string name="udpate_rate_hint">value in seconds</string>
+    <string name="save_config">Save</string>
+    <string name="contentMenu">Menu</string>
+
+    <color name="orange">#ff5500</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="date_color">#999999</color>
+    <color name="black">#000000</color>
+    <color name="gray">#999999</color>
+    <color name="blue">#0066cc</color>
+    <color name="gold">#e6b121</color>
+    <color name="blueback">#99FFFF</color>
+    <color name="articlecolor">#3399FF</color>
+    <color name="article_title">#3399FF</color>
+    <color name="cachecolor">#8ad0e8</color>
+    <color name="normal">#FF000000</color>
+    <color name="recommended">#FFE35900</color>
+    <color name="other">#ff808080</color>
+    <color name="background">#bbffffff</color>
+    <color name="not_classified">#FFFFFF</color>
+    <color name="information">#00EEEE</color>
+    <color name="warning">#00EE00</color>
+    <color name="average">#FFFF33</color>
+    <color name="high">#FF66FF</color>
+    <color name="disaster">#DD0000</color>
+
+    <string-array name="UpdateIntervals">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>240</item>
+    </string-array>
+    <string-array name="UpdateIntervalsString">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>1,5 hour</item>
+        <item>2 hours</item>
+        <item>4 hours</item>
+    </string-array>
+    <string-array name="ConnectionTimeout">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="TimeCorrectionString">
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+        <item>+5</item>
+        <item>+6</item>
+        <item>+7</item>
+        <item>+8</item>
+        <item>+9</item>
+        <item>+10</item>
+        <item>+11</item>
+        <item>+12</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+        <item>-5</item>
+        <item>-6</item>
+        <item>-7</item>
+        <item>-8</item>
+        <item>-9</item>
+        <item>-10</item>
+        <item>-11</item>
+        <item>-12</item>
+    </string-array>
+    <string-array name="TimeCorrection">
+        <item>3600</item>
+        <item>7200</item>
+        <item>10800</item>
+        <item>14400</item>
+        <item>18000</item>
+        <item>21600</item>
+        <item>25200</item>
+        <item>28800</item>
+        <item>32400</item>
+        <item>36000</item>
+        <item>39600</item>
+        <item>43200</item>
+        <item>-3600</item>
+        <item>-7200</item>
+        <item>-10800</item>
+        <item>-14400</item>
+        <item>-18000</item>
+        <item>-21600</item>
+        <item>-25200</item>
+        <item>-28800</item>
+        <item>-32400</item>
+        <item>-36000</item>
+        <item>-39600</item>
+        <item>-43200</item>
+    </string-array>
+    <string-array name="TabsArray">
+        <item>Active Triggers</item>
+        <item>Overview</item>
+        <item>Graphs Host List</item>
+        <item>Host Group</item>
+  <!--  <item>Discovered Host List</item> -->
+    </string-array>
+    <string-array name="TabsArrayValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+  <!--  <item>5</item> -->
+    </string-array>
+    <string-array name="TabsCount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="TriggerCheckTypes">
+        <item>Default</item>
+        <item>Only new triggers</item>
+        <item>Only active triggers</item>
+    </string-array>
+    <string-array name="TriggerCheckTypesValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="TriggerTypes">
+        <item>Show all triggers</item>
+        <item>Show all active triggers</item>
+        <item>Hide triggers with disabled host</item>
+        <item>Hide triggers with disabled item</item>
+    </string-array>
+    <string-array name="TriggerTypesValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
