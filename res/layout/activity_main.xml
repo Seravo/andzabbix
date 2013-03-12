@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+
+    
+   <!-- View starts here  -->
+   <!-- Logo -->
+   
+   <!-- Top divider -->
+   <!-- @+id is used only when we define for the 1st time -->
+   <LinearLayout
+       android:id="@+id/az_divider"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="5dp"
+       android:layout_marginBottom="10px"
+       style="@style/az_divider"/>
+   
+   <!-- Graphs button (top left) -->
+   <Button 
+        android:id="@+id/az_button_left_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/az_divider"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20px"
+        android:text="Graphs"
+        style="@style/az_button_left_up"/>
+   
+   <!-- FAQ button (top right) -->
+   <Button 
+        android:id="@+id/az_button_right_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/az_divider"
+        android:layout_alignParentRight="true"
+		android:layout_marginBottom="20px"
+        android:text="FAQ"
+        style="@style/az_button_right_up"/>
+   
+    
+    <!--  System overview button -->
+    <Button 
+        android:id="@+id/az_button_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/az_divider"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/az_button_left_up"
+        android:layout_toLeftOf="@id/az_button_right_up"
+        android:text="System Overview"
+        style="@style/az_button_center"/>
+    
+    <!--  Triggers button (down left)-->
+    <Button 
+        android:id="@+id/az_button_left_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/az_button_left_up"
+        android:layout_alignParentLeft="true"
+        android:text="Triggers"
+        style="@style/az_button_left_down"/>
+    
+    <!--  Hosts button (down right)-->
+    <Button 
+        android:id="@+id/az_button_right_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/az_button_right_up"
+        android:layout_alignParentRight="true"
+        android:text="Hosts"
+        style="@style/az_button_right_down"/>
+</RelativeLayout>
