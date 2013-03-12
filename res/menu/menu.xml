@@ -1,6 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:title="Filter" 
-		android:id="@+id/filter"></item>	
-	<item android:title="Configuration" 
-		android:id="@+id/mainconfiguration"></item>	
-</menu>
