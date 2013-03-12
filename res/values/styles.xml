@@ -19,7 +19,6 @@
     
     <style name="az_divider">
         <item name="android:background">@drawable/az_divider</item>
-        <item name="android:gravity">center_vertical|center_horizontal</item>
     </style>
     
     
