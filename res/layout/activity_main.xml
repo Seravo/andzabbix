@@ -89,6 +89,7 @@
         android:layout_toRightOf="@id/az_button_left_up"
         android:layout_toLeftOf="@id/az_button_right_up"
         android:text="System Overview"
+        android:onClick="openSystemOverview"
         style="@style/az_button_center"/>
     
     <!--  Triggers button (down left)-->

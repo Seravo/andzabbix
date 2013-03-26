@@ -34,8 +34,11 @@
             android:name="com.example.andzabbix.FAQActivity"
             android:label="@string/title_activity_faq" >
         </activity>
-        
         <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name="com.example.andzabbix.SystemOverviewActivity"
+            android:label="@string/title_activity_system_overview" >
+        </activity>
     </application>
 
 </manifest>

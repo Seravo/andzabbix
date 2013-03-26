@@ -10,7 +10,7 @@ import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class FAQActivity extends Activity {
+public class SystemOverviewActivity extends Activity {
 
 	@SuppressLint("newApi")
 	@Override
@@ -19,7 +19,7 @@ public class FAQActivity extends Activity {
 		
 		//Get String to display
 		Intent intent = getIntent();
-		String message = intent.getStringExtra(MainActivity.FAQ_MESSAGE);
+		String message = intent.getStringExtra(MainActivity.SystemOverview_MESSAGE);
 		
 		//Create text view
 		TextView textView = new TextView(this);
@@ -58,3 +58,4 @@ public class FAQActivity extends Activity {
 	}
 
 }
+

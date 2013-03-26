@@ -14,5 +14,7 @@
 
     <string name="title_activity_graphs">Graphs</string>
     <string name="title_activity_faq">FAQActivity</string>
+    <string name="title_activity_system_overview">SystemOverviewActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
