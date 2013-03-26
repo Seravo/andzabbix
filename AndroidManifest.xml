@@ -30,6 +30,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.andzabbix.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.andzabbix.FAQActivity"
+            android:label="@string/title_activity_faq" >
+        </activity>
+        
+        <activity android:name="org.achartengine.GraphicalActivity" />
     </application>
 
 </manifest>

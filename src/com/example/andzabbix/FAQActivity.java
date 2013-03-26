@@ -1,15 +1,8 @@
 package com.example.andzabbix;
 
-import org.achartengine.ChartFactory;
-import org.achartengine.model.TimeSeries;
-import org.achartengine.model.XYMultipleSeriesDataset;
-import org.achartengine.renderer.XYMultipleSeriesRenderer;
-import org.achartengine.renderer.XYSeriesRenderer;
-
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,32 +10,24 @@ import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class GraphsActivity extends Activity {
+public class FAQActivity extends Activity {
 
-	public Intent getIntent(Context context)
-	{
+	@SuppressLint("newApi")
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 		
-		//Graph parameters
-		int[] x = {1,2,3,4,5,6,7,8,9,10};
-		int[] y = {30,34,45,57,77,89,100,111,123,145};
-			
-		TimeSeries series = new TimeSeries("Line1");
-			
-		for (int i = 0; i < x.length; i++)
-		{
-			series.add(x[i], y[i]);
-		}
+		//Get String to display
+		Intent intent = getIntent();
+		String message = intent.getStringExtra(MainActivity.FAQ_FAQMESSAGE);
 		
-		XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
-		dataset.addSeries(series);
-		
-		XYMultipleSeriesRenderer mRenderer = new XYMultipleSeriesRenderer();
-		XYSeriesRenderer renderer = new XYSeriesRenderer();
-		mRenderer.addSeriesRenderer(renderer);
-		
-		Intent intent = ChartFactory.getLineChartIntent(context, dataset, mRenderer, "Line Graph");
-		return intent;
-			
+		//Create text view
+		TextView textView = new TextView(this);
+		textView.setTextSize(40);
+		textView.setText(message);
+		setContentView(textView);
+		// Show the Up button in the action bar.
+		setupActionBar();
 	}
 
 	/**
@@ -71,4 +56,5 @@ public class GraphsActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
 }

@@ -75,6 +75,7 @@
         android:layout_alignParentRight="true"
 		android:layout_marginBottom="20dp"
         android:text="FAQ"
+        android:onClick="openFAQ"
         style="@style/az_button_right_up"/>
    
     

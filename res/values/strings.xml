@@ -13,6 +13,6 @@
     </string-array>
 
     <string name="title_activity_graphs">Graphs</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_faq">FAQActivity</string>
 
 </resources>

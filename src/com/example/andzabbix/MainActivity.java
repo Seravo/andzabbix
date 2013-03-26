@@ -9,6 +9,7 @@ import android.view.View;
 public class MainActivity extends Activity {
 	
 	public final static String GRAPHS_MESSAGE = "com.example.myfirstapp.MESSAGE";
+	public final static String FAQ_FAQMESSAGE = "com.example.myfirstapp.FAQMESSAGE";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,10 +26,17 @@ public class MainActivity extends Activity {
 	// Called when the user clicks the graph button
 	// Intent can carry a data bundle!
 	public void openGraph(View view){
-		Intent intent = new Intent(this, GraphsActivity.class);
-		String displayText = "This is the graphs view/activity".toString();
-		intent.putExtra(GRAPHS_MESSAGE, displayText);
+		GraphsActivity graphs = new GraphsActivity();
+		Intent graphsIntent = graphs.getIntent(this);
+		startActivity(graphsIntent);
+	}
+	
+	public void openFAQ(View view){
+		Intent intent = new Intent(this, FAQActivity.class);
+		String displayText = "This is the FAQ view/activity".toString();
+		intent.putExtra(FAQ_FAQMESSAGE, displayText);
 		startActivity(intent);
+		
 	}
 
 }
