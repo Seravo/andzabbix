@@ -48,5 +48,7 @@ public class MainActivity extends Activity {
 		intent.putExtra(SystemOverview_MESSAGE, displayText);
 		startActivity(intent);
 	}
+	
+	//Sami testing
 
 }
