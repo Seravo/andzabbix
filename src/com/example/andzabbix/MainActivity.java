@@ -1,10 +1,20 @@
 package com.example.andzabbix;
-
+import com.example.andzabbix.R;
+import com.example.andzabbix.ServerActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.View;
+import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View.OnClickListener;
+import android.view.View.OnCreateContextMenuListener;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class MainActivity extends Activity {
 	
@@ -15,8 +25,20 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+	
+		Button servConfigButton=(Button)findViewById(R.id.az_button_config_down);
+		servConfigButton.setOnClickListener(servConfigListener);
 	}
-
+		public OnClickListener servConfigListener=new OnClickListener(){
+		public void onClick(View v){
+			Intent intent=new Intent();
+			intent.setClass(MainActivity.this,ServerListActivity.class);
+			startActivity(intent);
+			
+		}
+		
+	};
+		
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -24,6 +46,8 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+
+
 	//Called when the user clicks the Graphs button
 	//This intent initiates the GraphsActivity class that uses the achartengine
 	public void openGraph(View view){
@@ -48,7 +72,13 @@ public class MainActivity extends Activity {
 		intent.putExtra(SystemOverview_MESSAGE, displayText);
 		startActivity(intent);
 	}
-	
-	//Sami testing
-
+	//public void openServerConfiguration(View view){
+		//ServerActivity servConfig=new ServerActivity();
+		//Intent serverIntent=servConfig.getIntent();
+		
+//		startActivity(serverIntent);
+		//Intent serverIntent = new Intent(MainActivity.this, ServerActivity.class);
+		//MainActivity.this.startActivity(serverIntent);
+		
+//}
 }

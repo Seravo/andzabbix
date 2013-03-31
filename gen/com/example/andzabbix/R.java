@@ -9,6 +9,7 @@ package com.example.andzabbix;
 
 public final class R {
     public static final class array {
+        public static final int ConnectionTimeout=0x7f060001;
         /**  this is proof of concept, will be populated from user settings later 
          */
         public static final int select_server=0x7f060000;
@@ -37,9 +38,14 @@ public final class R {
         public static final int az_logo=0x7f020008;
         public static final int background=0x7f020009;
         public static final int ic_launcher=0x7f02000a;
+        public static final int icon=0x7f02000b;
+        public static final int ok_icon=0x7f02000c;
+        public static final int trigger_active=0x7f02000d;
+        public static final int zabbix_unknown=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000b;
+        public static final int action_settings=0x7f09001b;
+        public static final int add_server=0x7f09001e;
         public static final int az_button_center=0x7f090006;
         public static final int az_button_config_down=0x7f09000a;
         public static final int az_button_left_down=0x7f090007;
@@ -50,23 +56,46 @@ public final class R {
         public static final int az_divider_middle=0x7f090003;
         public static final int az_divider_up=0x7f090001;
         public static final int az_logo=0x7f090000;
+        public static final int base_auth_pass=0x7f09001a;
+        public static final int base_auth_pass_txt=0x7f090019;
+        public static final int base_auth_user=0x7f090018;
+        public static final int base_auth_user_txt=0x7f090017;
+        public static final int buttonsll=0x7f09000b;
+        public static final int filter=0x7f09001c;
+        public static final int linearLayout1=0x7f090010;
+        public static final int mainconfiguration=0x7f09001d;
+        public static final int prefConnTimeout=0x7f090015;
+        public static final int prefServerName=0x7f090011;
+        public static final int prefServerPass=0x7f090014;
+        public static final int prefServerUrl=0x7f090012;
+        public static final int prefServerUser=0x7f090013;
+        public static final int refreshActivity=0x7f09000e;
+        public static final int scrollView1=0x7f09000f;
+        public static final int selectServer=0x7f09000d;
         public static final int select_server=0x7f090002;
+        public static final int serverName=0x7f09000c;
+        public static final int use_base_auth=0x7f090016;
     }
     public static final class layout {
         public static final int activity_faq=0x7f030000;
         public static final int activity_graphs=0x7f030001;
         public static final int activity_main=0x7f030002;
         public static final int activity_system_overview=0x7f030003;
+        public static final int list_item=0x7f030004;
+        public static final int serverpref_layout=0x7f030005;
     }
     public static final class menu {
         public static final int faq=0x7f080000;
         public static final int graphs=0x7f080001;
         public static final int main=0x7f080002;
-        public static final int system_overview=0x7f080003;
+        public static final int menu=0x7f080003;
+        public static final int servers=0x7f080004;
+        public static final int system_overview=0x7f080005;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int contentMenu=0x7f050008;
         public static final int hello_world=0x7f050007;
         public static final int select_server=0x7f050003;
         public static final int server_prompt=0x7f050002;
@@ -101,6 +130,7 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int ServerList=0x7f07000a;
         public static final int az_button_center=0x7f070006;
         public static final int az_button_config_down=0x7f070009;
         public static final int az_button_left_down=0x7f070007;

@@ -39,6 +39,16 @@
             android:name="com.example.andzabbix.SystemOverviewActivity"
             android:label="@string/title_activity_system_overview" >
         </activity>
+        <activity
+            android:name="com.example.andzabbix.ServerActivity"
+            android:icon="@drawable/icon"
+            android:label="ServerList" >
+        </activity>
+         <activity
+            android:name="com.example.andzabbix.ServerListActivity"
+            android:icon="@drawable/icon"
+            android:label="ServerList" >
+        </activity>
     </application>
 
 </manifest>
