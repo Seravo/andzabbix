@@ -5,7 +5,7 @@ import java.util.Date;
 
 import java.util.Map;
 
-import com.example.andzabbix.R;
+import ru.sonic.zabbix.R;
 
 /**
  * Object Representing a Zabbix Trigger
