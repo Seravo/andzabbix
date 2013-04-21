@@ -22,43 +22,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="ru.sonic.zabbix.GraphsActivity"
-            android:label="@string/title_activity_graphs"
-            android:parentActivityName="ru.sonic.zabbix.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.andzabbix.MainActivity" />
-        </activity>
+        
         <activity
             android:name="ru.sonic.zabbix.FAQActivity"
             android:label="@string/title_activity_faq" >
         </activity>
         <activity android:name="org.achartengine.GraphicalActivity" />
-        <activity
-            android:name="ru.sonic.zabbix.SystemOverviewActivity"
-            android:label="@string/title_activity_system_overview" >
-        </activity>
+      
       
         
-         --------------------------------
+        
+         <activity
+            android:name=".ActiveTriggerActivity"
+            android:icon="@drawable/icon"
+            android:label="Active triggers" >
+        </activity>
+         <activity
+            android:name=".ActiveTriggerInfoActivity"
+            android:icon="@drawable/icon"
+            android:label="Trigger Info" >
+        </activity>
           <activity
             android:name=".service.ServicePrefActivity"
             android:icon="@drawable/icon"
             android:label="Service configuration" >
         </activity>
- 		 <!-- <activity
-            android:name=".ActiveTriggerActivity"
-            android:icon="@drawable/icon"
-            android:label="Active triggers" >
-        </activity> -->    
+ 		    
           
-      <!-- <activity
+      <activity
             android:name=".ZBXPreferenceActivity"
             android:icon="@drawable/icon"
             android:label="Settings" >
-        </activity> --> 
-        
+        </activity>      
         <activity
             android:name=".ChecksPrefActivity"
             android:icon="@drawable/icon"
@@ -69,11 +64,7 @@
             android:icon="@drawable/icon"
             android:label="Last issues" >
         </activity>
-    <!-- <activity
-            android:name=".InterfacePrefActivity"
-            android:icon="@drawable/icon"
-            android:label="Last issues" >
-        </activity> -->    
+       
         <activity
             android:name=".OtherPrefActivity"
             android:icon="@drawable/icon"
@@ -94,26 +85,22 @@
             android:icon="@drawable/icon"
             android:label="Host List" >
         </activity>
-    <!--<activity
+    <activity
             android:name=".DHostListActivity"
             android:icon="@drawable/icon"
             android:label="DHost List" >
-        </activity>  -->   
+        </activity>   
         <activity
             android:name=".ItemListActivity"
             android:icon="@drawable/icon"
             android:label="Items Overview" >
         </activity>
-   <!--  <activity
-            android:name=".ActiveTriggerInfoActivity"
-            android:icon="@drawable/icon"
-            android:label="Trigger Info" >
-        </activity> -->    
- <!-- <activity
+     
+  <activity
             android:name=".GraphHostsActivity"
             android:icon="@drawable/icon"
             android:label="Hosts with graphs" >
-        </activity>  -->      
+        </activity>       
         <activity
             android:name=".GraphsListActivity"
             android:icon="@drawable/icon"
@@ -135,26 +122,22 @@
             android:icon="@drawable/icon"
             android:label="ServerList" >
         </activity>
-      <!--<activity
+      <activity
             android:name=".ServiceControl"
             android:icon="@drawable/icon"
             android:label="ServiceControl" >
-        </activity>  -->  
+        </activity>   
         <activity
             android:name=".HostInfoActivity"
             android:icon="@drawable/icon"
             android:label="Host Information" >
         </activity>
-   <!--<activity
-            android:name=".InterfaceConfigurationActivity"
-            android:icon="@drawable/icon"
-            android:label="Interface Configuration" >
-        </activity>  -->     
-  <!--<activity
+      
+  <activity
             android:name=".EventListActivity"
             android:icon="@drawable/icon"
             android:label="Events list" >
-        </activity>  -->      
+        </activity>     
         <activity
             android:name=".ZabbixWidgetControl"
             android:icon="@drawable/icon"

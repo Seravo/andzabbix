@@ -43,7 +43,13 @@
        android:layout_marginBottom="20dp"
        style="@style/select_server"
        />
-   
+   <Button
+            android:id="@+id/selectServer"
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="Select Server"
+            android:textSize="10dp" />
    <!-- Middle divider -->
    <LinearLayout
        android:id="@+id/az_divider_middle"
@@ -88,8 +94,9 @@
         android:layout_marginTop="20px"
         android:layout_toRightOf="@id/az_button_left_up"
         android:layout_toLeftOf="@id/az_button_right_up"
+        android:onClick="SystemOverview"
         android:text="System Overview"
-        android:onClick="openSystemOverview"
+       
         style="@style/az_button_center"/>
     
     <!--  Triggers button (down left)-->
@@ -100,6 +107,7 @@
         android:layout_below="@id/az_button_left_up"
         android:layout_alignParentLeft="true"
         android:text="Triggers"
+        android:onClick="Triggers"
         style="@style/az_button_left_down"/>
     
     <!--  Hosts button (down right)-->
@@ -110,6 +118,7 @@
         android:layout_below="@id/az_button_right_up"
         android:layout_alignParentRight="true"
         android:text="Hosts"
+        android:onClick="Hosts"
         style="@style/az_button_right_down"/>
     
     <!-- Bottom Divider -->

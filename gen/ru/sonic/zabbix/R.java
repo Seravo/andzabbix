@@ -92,14 +92,14 @@ public final class R {
     public static final class id {
         public static final int action_settings=0x7f0b002b;
         public static final int add_server=0x7f0b002e;
-        public static final int az_button_center=0x7f0b0006;
-        public static final int az_button_config_down=0x7f0b000a;
-        public static final int az_button_left_down=0x7f0b0007;
-        public static final int az_button_left_up=0x7f0b0004;
-        public static final int az_button_right_down=0x7f0b0008;
-        public static final int az_button_right_up=0x7f0b0005;
-        public static final int az_divider_down=0x7f0b0009;
-        public static final int az_divider_middle=0x7f0b0003;
+        public static final int az_button_center=0x7f0b0007;
+        public static final int az_button_config_down=0x7f0b000b;
+        public static final int az_button_left_down=0x7f0b0008;
+        public static final int az_button_left_up=0x7f0b0005;
+        public static final int az_button_right_down=0x7f0b0009;
+        public static final int az_button_right_up=0x7f0b0006;
+        public static final int az_divider_down=0x7f0b000a;
+        public static final int az_divider_middle=0x7f0b0004;
         public static final int az_divider_up=0x7f0b0001;
         public static final int az_logo=0x7f0b0000;
         public static final int base_auth_pass=0x7f0b001e;
@@ -107,12 +107,12 @@ public final class R {
         public static final int base_auth_user=0x7f0b001c;
         public static final int base_auth_user_txt=0x7f0b001b;
         public static final int buttonStart=0x7f0b0023;
-        public static final int buttonsll=0x7f0b000f;
-        public static final int configlistview=0x7f0b000b;
+        public static final int buttonsll=0x7f0b0010;
+        public static final int configlistview=0x7f0b000c;
         public static final int dlayout=0x7f0b0024;
         public static final int filter=0x7f0b002c;
-        public static final int graphView1=0x7f0b000d;
-        public static final int graphll=0x7f0b000c;
+        public static final int graphView1=0x7f0b000e;
+        public static final int graphll=0x7f0b000d;
         public static final int linearLayout1=0x7f0b0014;
         public static final int mainconfiguration=0x7f0b002d;
         public static final int prefConnTimeout=0x7f0b0019;
@@ -122,9 +122,9 @@ public final class R {
         public static final int prefServerUser=0x7f0b0017;
         public static final int refreshActivity=0x7f0b0012;
         public static final int scrollView1=0x7f0b0013;
-        public static final int selectServer=0x7f0b0011;
+        public static final int selectServer=0x7f0b0003;
         public static final int select_server=0x7f0b0002;
-        public static final int serverName=0x7f0b0010;
+        public static final int serverName=0x7f0b0011;
         public static final int server_spinner=0x7f0b0021;
         public static final int servername_layout=0x7f0b0020;
         public static final int tblmain=0x7f0b001f;
@@ -136,20 +136,18 @@ public final class R {
         public static final int widgettextdata=0x7f0b0028;
         public static final int widgettextinactive=0x7f0b0027;
         public static final int widgettextserver=0x7f0b0025;
-        public static final int zoomGrapgControls=0x7f0b000e;
+        public static final int zoomGrapgControls=0x7f0b000f;
     }
     public static final class layout {
         public static final int activity_faq=0x7f030000;
-        public static final int activity_graphs=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int activity_system_overview=0x7f030003;
-        public static final int configuration=0x7f030004;
-        public static final int graph=0x7f030005;
-        public static final int list_item=0x7f030006;
-        public static final int serverpref_layout=0x7f030007;
-        public static final int table=0x7f030008;
-        public static final int widget_config=0x7f030009;
-        public static final int widget_layout=0x7f03000a;
+        public static final int activity_main=0x7f030001;
+        public static final int configuration=0x7f030002;
+        public static final int graph=0x7f030003;
+        public static final int list_item=0x7f030004;
+        public static final int serverpref_layout=0x7f030005;
+        public static final int table=0x7f030006;
+        public static final int widget_config=0x7f030007;
+        public static final int widget_layout=0x7f030008;
     }
     public static final class menu {
         public static final int faq=0x7f0a0000;
