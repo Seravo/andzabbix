@@ -73,17 +73,19 @@
         style="@style/az_button_left_up"/>
    
    <!-- FAQ button (top right) -->
-   <Button 
-        android:id="@+id/az_button_right_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/az_divider_middle"
-        android:layout_alignParentRight="true"
-		android:layout_marginBottom="20dp"
-        android:text="FAQ"
-        android:onClick="openFAQ"
-        style="@style/az_button_right_up"/>
-   
+
+   <Button
+       android:id="@+id/az_button_right_up"
+       style="@style/az_button_right_up"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_below="@id/az_divider_middle"
+       android:layout_marginBottom="20dp"
+       android:gravity="center_vertical|center_horizontal|end"
+       android:onClick="openFAQ"
+       android:paddingRight="5dp"
+       android:text="Feedback" />
     
     <!--  System overview button -->
     <Button 

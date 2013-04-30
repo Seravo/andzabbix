@@ -112,7 +112,7 @@ public class MainActivity extends Activity {
 	// Called when the user clicks the FAQ button
 	// Intent can carry a data bundle! In this case the String seen below
 	public void openFAQ(View view){
-		Intent intent = new Intent(this, FAQActivity.class);
+		Intent intent = new Intent(this, Feedback.class);
 		String displayText = "This is the FAQ view/activity".toString();
 		intent.putExtra(FAQ_MESSAGE, displayText);
 		startActivity(intent);

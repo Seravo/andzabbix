@@ -24,9 +24,10 @@
         </activity>
         
         <activity
-            android:name="ru.sonic.zabbix.FAQActivity"
-            android:label="@string/title_activity_faq" >
+            android:name="ru.sonic.zabbix.Feedback"           
+            android:label="Feedback" >
         </activity>
+        
         <activity android:name="org.achartengine.GraphicalActivity" />
       
       
