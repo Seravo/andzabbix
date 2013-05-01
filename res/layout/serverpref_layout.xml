@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <ScrollView
+    <!--  <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content" >-->
 
         <LinearLayout
             android:id="@+id/linearLayout1"
@@ -124,6 +124,6 @@
                 android:text="" >
             </EditText>
         </LinearLayout>
-    </ScrollView>
+<!--     </ScrollView> --> 
 
 </LinearLayout>

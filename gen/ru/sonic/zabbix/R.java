@@ -90,8 +90,8 @@ public final class R {
         public static final int zabbix_unknown=0x7f02001b;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0030;
-        public static final int add_server=0x7f0b0033;
+        public static final int action_settings=0x7f0b002f;
+        public static final int add_server=0x7f0b0032;
         public static final int az_button_center=0x7f0b000c;
         public static final int az_button_config_down=0x7f0b0010;
         public static final int az_button_left_down=0x7f0b000d;
@@ -102,45 +102,44 @@ public final class R {
         public static final int az_divider_middle=0x7f0b0009;
         public static final int az_divider_up=0x7f0b0006;
         public static final int az_logo=0x7f0b0005;
-        public static final int base_auth_pass=0x7f0b0023;
-        public static final int base_auth_pass_txt=0x7f0b0022;
-        public static final int base_auth_user=0x7f0b0021;
-        public static final int base_auth_user_txt=0x7f0b0020;
-        public static final int buttonStart=0x7f0b0028;
+        public static final int base_auth_pass=0x7f0b0022;
+        public static final int base_auth_pass_txt=0x7f0b0021;
+        public static final int base_auth_user=0x7f0b0020;
+        public static final int base_auth_user_txt=0x7f0b001f;
+        public static final int buttonStart=0x7f0b0027;
         public static final int buttonsll=0x7f0b0015;
         public static final int commentInput=0x7f0b0001;
         public static final int configlistview=0x7f0b0011;
-        public static final int dlayout=0x7f0b0029;
-        public static final int filter=0x7f0b0031;
+        public static final int dlayout=0x7f0b0028;
+        public static final int filter=0x7f0b0030;
         public static final int graphView1=0x7f0b0013;
         public static final int graphll=0x7f0b0012;
-        public static final int linearLayout1=0x7f0b0019;
-        public static final int mainconfiguration=0x7f0b0032;
+        public static final int linearLayout1=0x7f0b0018;
+        public static final int mainconfiguration=0x7f0b0031;
         public static final int nameInput=0x7f0b0000;
-        public static final int prefConnTimeout=0x7f0b001e;
-        public static final int prefServerName=0x7f0b001a;
-        public static final int prefServerPass=0x7f0b001d;
-        public static final int prefServerUrl=0x7f0b001b;
-        public static final int prefServerUser=0x7f0b001c;
+        public static final int prefConnTimeout=0x7f0b001d;
+        public static final int prefServerName=0x7f0b0019;
+        public static final int prefServerPass=0x7f0b001c;
+        public static final int prefServerUrl=0x7f0b001a;
+        public static final int prefServerUser=0x7f0b001b;
         public static final int refresh=0x7f0b0004;
         public static final int refreshActivity=0x7f0b0017;
         public static final int result=0x7f0b0003;
-        public static final int scrollView1=0x7f0b0018;
         public static final int selectServer=0x7f0b0008;
         public static final int select_server=0x7f0b0007;
         public static final int serverName=0x7f0b0016;
-        public static final int server_spinner=0x7f0b0026;
-        public static final int servername_layout=0x7f0b0025;
+        public static final int server_spinner=0x7f0b0025;
+        public static final int servername_layout=0x7f0b0024;
         public static final int submit=0x7f0b0002;
-        public static final int tblmain=0x7f0b0024;
-        public static final int update_rate_entry_spinner=0x7f0b0027;
-        public static final int use_base_auth=0x7f0b001f;
-        public static final int widget_button_refresh=0x7f0b002e;
-        public static final int widget_button_triggerlist=0x7f0b002f;
-        public static final int widgettextactive=0x7f0b002b;
-        public static final int widgettextdata=0x7f0b002d;
-        public static final int widgettextinactive=0x7f0b002c;
-        public static final int widgettextserver=0x7f0b002a;
+        public static final int tblmain=0x7f0b0023;
+        public static final int update_rate_entry_spinner=0x7f0b0026;
+        public static final int use_base_auth=0x7f0b001e;
+        public static final int widget_button_refresh=0x7f0b002d;
+        public static final int widget_button_triggerlist=0x7f0b002e;
+        public static final int widgettextactive=0x7f0b002a;
+        public static final int widgettextdata=0x7f0b002c;
+        public static final int widgettextinactive=0x7f0b002b;
+        public static final int widgettextserver=0x7f0b0029;
         public static final int zoomGrapgControls=0x7f0b0014;
     }
     public static final class layout {
@@ -179,15 +178,6 @@ public final class R {
     public static final class style {
         public static final int ActiveTrigger=0x7f09000b;
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -199,11 +189,21 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f090000;
-        /**  Application theme. 
+        public static final int AppBaseTheme=0x7f09000e;
+        /** 
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+    </style>
+    
+ Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090001;
+        public static final int AppTheme=0x7f090000;
         public static final int HostList=0x7f09000c;
         public static final int ServerList=0x7f09000d;
         public static final int TriggerList=0x7f09000a;
@@ -213,8 +213,9 @@ public final class R {
         public static final int az_button_left_up=0x7f090004;
         public static final int az_button_right_down=0x7f090008;
         public static final int az_button_right_up=0x7f090005;
-        public static final int az_divider=0x7f090003;
-        public static final int select_server=0x7f090002;
+        public static final int az_divider=0x7f090002;
+        public static final int select_server=0x7f090001;
+        public static final int textColor=0x7f090003;
     }
     public static final class xml {
         public static final int checkprefs=0x7f040000;

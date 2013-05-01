@@ -32,7 +32,7 @@
        android:layout_marginBottom="20dp"
        style="@style/az_divider"/>
    
-   <!-- Server select spinner -->
+   <!-- Server select spinner
    <Spinner 
        android:id="@+id/select_server"
        android:layout_width="match_parent"
@@ -43,6 +43,17 @@
        android:layout_marginBottom="20dp"
        style="@style/select_server"
        />
+    Spinners should be implemented with adapters... my mistake :) -morph   
+    -->
+    <Spinner
+    android:id="@+id/select_server"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/az_divider_up"
+    android:layout_marginBottom="20dp"
+    android:popupBackground="#6E6E6E"
+     />
+    
    <Button
             android:id="@+id/selectServer"
             android:layout_width="1dp"
@@ -97,7 +108,7 @@
         android:layout_toRightOf="@id/az_button_left_up"
         android:layout_toLeftOf="@id/az_button_right_up"
         android:onClick="SystemOverview"
-        android:text="System Overview"
+        android:text="Overview"
        
         style="@style/az_button_center"/>
     

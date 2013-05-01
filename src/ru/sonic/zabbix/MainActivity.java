@@ -4,6 +4,7 @@ import ru.sonic.zabbix.R;
 import ru.sonic.zabbix.ServerActivity;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -12,15 +13,19 @@ import android.view.ContextMenu.ContextMenuInfo;
 import android.view.View.OnClickListener;
 import android.view.View.OnCreateContextMenuListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	
 	
-	public final static String FAQ_MESSAGE = "com.example.myfirstapp.FAQMESSAGE";
+	//public final static String FAQ_MESSAGE = "com.example.myfirstapp.FAQMESSAGE";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +49,21 @@ public class MainActivity extends Activity {
 		Button servConfigButton=(Button)findViewById(R.id.az_button_config_down);
 		servConfigButton.setOnClickListener(servConfigListener);
 		
+		Spinner spinner = (Spinner) findViewById(R.id.select_server);
+		// Create an ArrayAdapter using the string array and a default spinner layout
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+		R.array.select_server, android.R.layout.simple_spinner_item);
+		// Specify the layout to use when the list of choices appears
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		// Apply the adapter to the spinner
+		spinner.setAdapter(adapter);		
 		
 	}
-	//The intent initiates the Activity class
+
 	
+	
+	
+	//The intent initiates the Activity class
 	public OnClickListener graphsListener=new OnClickListener(){
 		public void onClick(View v){
 			Intent intent=new Intent();
@@ -113,8 +129,8 @@ public class MainActivity extends Activity {
 	// Intent can carry a data bundle! In this case the String seen below
 	public void openFAQ(View view){
 		Intent intent = new Intent(this, Feedback.class);
-		String displayText = "This is the FAQ view/activity".toString();
-		intent.putExtra(FAQ_MESSAGE, displayText);
+		//String displayText = "This is the FAQ view/activity".toString();
+		//intent.putExtra(FAQ_MESSAGE, displayText);
 		startActivity(intent);
 		
 	}
