@@ -10,12 +10,14 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="right"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+        android:background="@drawable/background" >
 
         <ListView
             android:id="@android:id/list"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"> 
+            android:layout_height="wrap_content"
+            style="@style/AppTheme"> 
         </ListView>
     </LinearLayout>
 
@@ -25,7 +27,7 @@
         android:layout_width="fill_parent"
         android:layout_height="34dp"
         android:gravity="right"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/serverName"

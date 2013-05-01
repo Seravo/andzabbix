@@ -15,6 +15,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
 		<item name="android:textColor">#FFF</item>
 		<item name="android:popupBackground">#6E6E6E</item>
+		
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     

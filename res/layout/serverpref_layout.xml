@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background">
 
     <!--  <ScrollView
         android:id="@+id/scrollView1"
@@ -13,7 +14,7 @@
             android:id="@+id/linearLayout1"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -27,7 +28,8 @@
                 android:layout_height="wrap_content"
                 android:autoText="false"
                 android:inputType="text"
-                android:singleLine="true" >
+                android:singleLine="true" 
+                android:textColor="#FFFFFF">
             </EditText>
 
             <TextView
@@ -41,7 +43,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:text="" >
+                android:text=""
+                android:textColor="#FFFFFF">
             </EditText>
 
             <TextView
@@ -56,7 +59,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:singleLine="true"
-                android:text="" >
+                android:text="" 
+                android:textColor="#FFFFFF" >
             </EditText>
 
             <TextView
@@ -71,7 +75,8 @@
                 android:layout_height="wrap_content"
                 android:password="true"
                 android:singleLine="true"
-                android:text="" >
+                android:text="" 
+                android:textColor="#FFFFFF" >
             </EditText>
 
             <TextView
@@ -84,7 +89,8 @@
                 android:id="@+id/prefConnTimeout"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/ConnectionTimeout" >
+                android:entries="@array/ConnectionTimeout" 
+                android:popupBackground="#6E6E6E">
             </Spinner>
 
             <CheckBox
@@ -105,7 +111,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:text="" >
+                android:text="" 
+                android:textColor="#FFFFFF" >
             </EditText>
 
             <TextView
@@ -121,7 +128,8 @@
                 android:layout_height="wrap_content"
                 android:password="true"
                 android:singleLine="true"
-                android:text="" >
+                android:text="" 
+                android:textColor="#FFFFFF" >
             </EditText>
         </LinearLayout>
 <!--     </ScrollView> --> 
