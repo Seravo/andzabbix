@@ -3,13 +3,14 @@
   android:layout_width="fill_parent"
   android:layout_height="fill_parent" 
   android:orientation="vertical">
-  <ListView
-	android:id="@+id/configlistview"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:entries="@array/menu"
-	android:textFilterEnabled="true" 
-	android:layout_x="0px"
-	android:layout_y="0px">
+
+    <ListView
+        android:id="@+id/configlistview"
+        style="@style/select_server"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:entries="@array/menu"
+        android:textFilterEnabled="true" >
     </ListView>
+
 </LinearLayout>
